@@ -1,0 +1,9 @@
+PUBLICAR EN GITHUB Y OBTENER EL APK
+
+1. Crea un repositorio vacío en https://github.com/new (por ejemplo: GrafosMovil).
+2. Descomprime este proyecto y sube su contenido completo al repositorio, incluyendo la carpeta oculta .github/workflows.
+3. En GitHub abre la pestaña Actions. Se ejecutará el flujo “Build Android APK”.
+4. Cuando termine correctamente, entra a la ejecución y descarga el artefacto “GrafosMovil-debug-apk”.
+5. Dentro del ZIP descargado encontrarás app-debug.apk.
+
+Este entorno no tiene Android SDK/Gradle ni acceso autenticado a tu cuenta de GitHub; por eso no es posible compilar el APK ni crear/publicar un repositorio directamente desde aquí. El flujo incluido compila el APK automáticamente en GitHub Actions al subir el proyecto.
